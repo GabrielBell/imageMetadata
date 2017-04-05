@@ -1,0 +1,21 @@
+doctype html
+html(lang='en')
+	head
+	title File Metadata API
+	body
+		h1 File Metadata
+		p mimetype:  #{metadata.mimetype}
+		p original name:  #{metadata.originalname}
+		p size:  #{metadata.size}
+		p encoding:  #{metadata.encoding}
+		p destination: #{metadata.path}
+		|
+		|
+		|
+		
+
+		img(src='/pictures/upload/'+metadata.filename, alt= metadata.originalname)
+
+
+
+		
